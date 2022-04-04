@@ -1,0 +1,50 @@
+{
+    "signup": {
+        "nome": "Andressa Karla",
+        "cpf": "01234567890",
+        "email": "a.k@getnada.com",
+        "whatsapp": "44999999999",
+        "endereco": {
+            "cep": "04534011",
+            "rua": "Rua Joaquim Floriano",
+            "numero": "1000",
+            "complemento": "Ap 142",
+            "cidade": "Itaim Bibi",
+            "cidade_uf": "São Paulo/SP"
+        },
+        "metodo_entrega": "Moto",
+        "cnh": "/images/cnh-digital.jpg"
+    },
+    "cpf_inv": {
+        "nome": "André Carlos",
+        "cpf": "x12345678AA",
+        "email": "a.c@getnada.com",
+        "whatsapp": "44999999998",
+        "endereco": {
+            "cep": "04534011",
+            "rua": "Rua Joaquim Floriano",
+            "numero": "1000",
+            "complemento": "Ap 142",
+            "distrito": "Itaim Bibi",
+            "cidade_uf": "São Paulo/SP"
+        },
+        "metodo_entrega": "Moto",
+        "cnh": "/images/cnh-digital.jpg"
+    },
+    "email_inv": {
+        "nome": "Amanda Silva",
+        "cpf": "85415215751",
+        "email": "a.s.getnada.com",
+        "whatsapp": "44999999997",
+        "endereco": {
+            "cep": "04534011",
+            "rua": "Rua Joaquim Floriano",
+            "numero": "1000",
+            "complemento": "Ap 142",
+            "distrito": "Itaim Bibi",
+            "cidade_uf": "São Paulo/SP"
+        },
+        "metodo_entrega": "Moto",
+        "cnh": "/images/cnh-digital.jpg"
+    }
+}
