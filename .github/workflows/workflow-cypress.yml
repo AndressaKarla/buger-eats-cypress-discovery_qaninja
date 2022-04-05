@@ -36,6 +36,7 @@ jobs:
           browser: chrome
           # será gravado o resultado dos testes automatizados
           record: true
+          # serão agrupados na aba "Specs" do Cypress Dashboard os testes automatizados executados no navegador Chrome
           group: 'UI - Chrome'
           # serão executadas as suítes de testes presentes nesse diretório
           spec: cypress/integration/*
