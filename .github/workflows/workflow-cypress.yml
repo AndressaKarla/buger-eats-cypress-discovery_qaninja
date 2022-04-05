@@ -1,0 +1,46 @@
+# nome do workflow
+name: Cypress Regression Tests
+
+# quando o workflow será executado
+# nesse caso o workflow será executado toda vez que for realizado um push no repositório
+on: [push]
+
+# automação de execuções de algum processo
+jobs:
+
+# nome do job definido conforme a necessidade
+  ui-chrome-tests:
+    # será construido uma pequena máquina virtual bem enxuta (container, runner)
+    # onde esse sistema operacional será instalado
+    runs-on: ubuntu-latest
+    # template cypress com todas as dependências necessárias para executar os testes automatizados
+    container: cypress/browsers:node14.17.0-chrome88-ff89
+    # estratégia para que mesmo após uma falha, não abortar e continuar o processo até o final
+    strategy:
+      fail-fast: false
+    steps:
+    # passo onde será obtido uma cópia do repositório e adicionada na máquina virtual (container, runner)
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      # passo onde será executado os testes automatizados no navegador Chrome
+      - name: 'UI Tests - Chrome'
+        uses: cypress-io/github-action@v2
+        with:
+          # será instalado as dependências do projeto do arquivo "package.json"
+          install-command: yarn install
+          # será verificado se o sistema estará online antes de ser executado os testes automatizados
+          # BASE_URL configurada no github, na aba "Settings" > "Secrets" > "Actions"
+          wait-on: ${{ secrets.BASE_URL }}
+          wait-on-timeout: 120
+          browser: chrome
+          # será gravado o resultado dos testes automatizados
+          record: true
+          group: 'UI - Chrome'
+          # serão executadas as suítes de testes presentes nesse diretório
+          spec: cypress/integration/*
+        env:
+          # CYPRESS_RECORD_KEY configurada no github, na aba "Settings" > "Secrets" > "Actions"
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          # será identificado automaticamente por meio da conta do github
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
