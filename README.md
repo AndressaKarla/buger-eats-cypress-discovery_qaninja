@@ -13,8 +13,17 @@ Projeto desenvolvido para o curso Cypress Discovery da [QANinja](https://app.qan
 - Refatoração;
 - Factory e Fake com dados dinâmicos;
 - Evidências das execuções dos testes automatizados em formato de videos e capturas de tela (screenshots);
-- Continuous Testing (GitHub Actions e Cypress Dashboard);
-- Etc.
+- Continuous Testing:
+  - GitHub Actions
+  
+![github-actions](https://github.com/AndressaKarla/buger-eats-cypress-discovery_qaninja/blob/main/arquivos/github-actions.png)
+
+  - Cypress Dashboard
+  
+![cypress-dashboard-1](https://github.com/AndressaKarla/buger-eats-cypress-discovery_qaninja/blob/main/arquivos/cypress-dashboard-1.png)
+![cypress-dashboard-2](https://github.com/AndressaKarla/buger-eats-cypress-discovery_qaninja/blob/main/arquivos/cypress-dashboard-2.png)
+
+- Entre outros conceitos
 
 
 ## :pushpin: Cenários implementados no projeto
@@ -40,12 +49,14 @@ A execução pode ser feita através da linha de comando ou do próprio framewor
 - Através da linha de comando:
 ```bash
 # Na pasta "buger-eats-cypress-discovery_qaninja", executar:
-$ npx cypress open
+$ npm run test
 ```
 - Através do framework:
 Basta abrir o Cypress e através da interface dele escolher a pasta do projeto.
 
 Após isso, é só escolher a spec desejada e assistir a execução dos testes.
+
+![npm-run-test](https://github.com/AndressaKarla/buger-eats-cypress-discovery_qaninja/blob/main/arquivos/npm-run-test.gif)
 
 OU
 
@@ -53,11 +64,16 @@ OU
 # Na pasta "buger-eats-cypress-discovery_qaninja", executar:
 $ npx cypress run
 ```
+![npx-cypress-run-1](https://github.com/AndressaKarla/buger-eats-cypress-discovery_qaninja/blob/main/arquivos/npx-cypress-run-1.png)
+![npx-cypress-run-2](https://github.com/AndressaKarla/buger-eats-cypress-discovery_qaninja/blob/main/arquivos/npx-cypress-run-2.png)
+![npx-cypress-run-3](https://github.com/AndressaKarla/buger-eats-cypress-discovery_qaninja/blob/main/arquivos/npx-cypress-run-3.png)
 
+## :mortar_board: Certificado
+![certificado](https://github.com/AndressaKarla/buger-eats-cypress-discovery_qaninja/blob/main/arquivos/certificado-curso-cypress-discovery-QANinja_%20Andressa-Karla.png)
 
 ##
 Feito com ❤️ por <a href="https://www.linkedin.com/in/andressakarla/">Andressa Karla</a> :wave: Entre em contato!
 
 [![Github](https://img.shields.io/badge/-Github-595D60?style=flat-square&logo=Github&logoColor=white&link=https://github.com/AndressaKarla/)](https://github.com/AndressaKarla/)
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-595D60?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/andressakarla//)](https://www.linkedin.com/in/andressakarla/)
-[![Gmail](https://img.shields.io/badge/-Gmail-595D60?style=flat-square&logo=Gmail&logoColor=white&link=mailto:andressa.karla1@gmail.com/)](mailto:andressa.karla1@gmail.com/)
+[![Gmail](https://img.shields.io/badge/-Gmail-595D60?style=flat-square&logo=Gmail&logoColor=white&link=mailto:andressa.karla1@gmail.com)](mailto:andressa.karla1@gmail.com)
